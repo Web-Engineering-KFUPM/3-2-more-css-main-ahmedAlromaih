@@ -114,7 +114,10 @@ color: var(--muted);
 /* TODO 3:
    - Set the color to the brand variable and make the text bold for the .color-demo .color-note class.
    - Set the color to var(--muted) and the font size to 0.95rem for the .color-demo .muted class.
-   - Style the .bg-sample class: Make the width of 100%, set a minimum height of 80px, add padding 0.75 rem and margin-block 0.75 rem, round the corners using border-radius, set the text color to white, and apply a 135-degree linear gradient background starting from the brand color and ending with a green tone like linear-gradient(135deg, var(--brand), #22c55e).
+   - Style the .bg-sample class: Make the width of 100%, set a minimum height of 80px, add padding 0.75 rem
+    and margin-block 0.75 rem, round the corners using border-radius, set the text color to white,
+    and apply a 135-degree linear gradient background starting from the brand color
+    and ending with a green tone like linear-gradient(135deg, var(--brand), #22c55e).
 */
 .color-demo .color-note{
 color: var(--brand) ;
@@ -125,10 +128,6 @@ font-weight: bold;
 .color-demo .muted {
 color: var(--muted);
 font-size: 0.95rem;
-padding: 0.75rem;
-margin-block: 0.75rem;
-color: #ffffff;
-background: linear-gradient(135deg, var(--brand), #22c55e);
 }
 
 .bg-sample{
@@ -136,12 +135,16 @@ background: linear-gradient(135deg, var(--brand), #22c55e);
   min-height: 80px;
   border-radius: 0.5rem;
   color: #ffffff;
+  padding: 0.75rem;
+  margin-block: 0.75rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--brand), #22c55e);
 }
 /* TODO 4:
    - For the .inline-label class: make it behave like an inline-block element with small padding of 0.25rem and 0.5 rem and a border of width 1 px, type as solid line, and set color of value rgba(0, 0, 0, 0.18).
    - For the .inline-label.alt class: ensure it stays inline with others but use a different border style e.g. dashed.
 */
-.inlinelabel{   
+.inline-label{   
 display: inline-block;
 padding: 0.25rem 0.5rem;
 border-width: 1px;
@@ -149,7 +152,7 @@ border-style: solid;
 color: rgba(0, 0, 0, 0.18);
 }
 
-.inline-label.alt{ 
+.inline-label .alt{ 
 border-style: dashed;
 }
 
@@ -241,7 +244,7 @@ border-style: dashed;
 */
 .copy .title{
   font-size: 2rem ;
-  font-weight: 600;
+  font-weight: ;
   text-transform: capitalize;
 }
 .copy .intro{
