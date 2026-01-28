@@ -82,12 +82,7 @@ body {
   color: #111827;
 }
 
-/* TODO 1:
-  - Define CSS variables on :root for brand colors:
-      1. Define --brand variable and set a color value of #2563eb for primary UI elements
-      2. Define --brand-dark variable and set a darker color value of #1d4ed8 for hover states
-  - Apply a global box-sizing reset using the universal selector (hint use * selector).
-*/
+
 :root {
   --muted: #6b7280;        /* muted text */
   --bg: #f6f7fb;           /* page background */
@@ -152,7 +147,7 @@ border-style: solid;
 color: rgba(0, 0, 0, 0.18);
 }
 
-.inline-label .alt{ 
+.inline-label.alt{ 
 border-style: dashed;
 }
 
@@ -243,13 +238,13 @@ border-style: dashed;
    - For the .copy .intro class: set the font-style to italic and slightly increase the line-height and set the top margin of 0.25 rem.
 */
 .copy .title{
-  font-size: 2rem ;
-  font-weight: ;
+  font-size: 1.5rem ;
+  font-weight: 650;
   text-transform: capitalize;
 }
 .copy .intro{
-  font-style: italic ;
-  line-height: 120%;
+  font-style: italic;
+  line-height: 1.6;
   margin-top: 0.25rem;
 }
 .copy .sample-text {
